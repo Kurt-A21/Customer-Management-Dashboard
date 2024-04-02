@@ -1,0 +1,12 @@
+<h1>Customer Management Dashboard</h1> <!-- Title displayed in the application -->
+<div class="line"></div>
+  <br>
+
+  <div class="button-layout">
+    <a class="btn btn-primary" [routerLink]="['customer-data']" routerLinkActive="active">Customer Table</a> <!-- Link to the Customer Table component -->
+    <a class="btn btn-primary" [routerLink]="['customer']" routerLinkActive="active">Add Customer</a> <!-- Link to the Add Customer component -->
+  </div>
+
+  <br />
+  <br />
+<router-outlet></router-outlet> <!-- Placeholder for rendering components -->

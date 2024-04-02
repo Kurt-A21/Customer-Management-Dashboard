@@ -1,0 +1,99 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customers": [
+    {
+      "fullName": "Richard Belmont",
+      "number": "1273091272",
+      "email": "castle@gmail.com",
+      "id": 4
+    },
+    {
+      "fullName": "Emily Davis",
+      "number": "03214783221",
+      "email": "emily.davis@email.com",
+      "id": 7
+    },
+    {
+      "fullName": "David Lee",
+      "number": "1297182991",
+      "email": "david.lee@email.com",
+      "id": 9
+    },
+    {
+      "fullName": "Kurt Jack",
+      "number": "10371289",
+      "email": "kj@gmail.com",
+      "id": 10
+    },
+    {
+      "fullName": "Jane Smith",
+      "number": "1234567890",
+      "email": "jane.smith@example.com",
+      "id": 11
+    },
+    {
+      "fullName": "Alice Johnson",
+      "number": "5556667777",
+      "email": "alice.johnson@example.com",
+      "id": 12
+    },
+    {
+      "fullName": "Bob Wilson",
+      "number": "9876543210",
+      "email": "bob.wilson@example.com",
+      "id": 13
+    },
+    {
+      "fullName": "Sarah Davis",
+      "number": "1112223333",
+      "email": "sarah.davis@example.com",
+      "id": 14
+    },
+    {
+      "fullName": "Emily White",
+      "number": "4443332222",
+      "email": "emily.white@example.com",
+      "id": 15
+    },
+    {
+      "fullName": "David Lee",
+      "number": "7778889999",
+      "email": "david.lee@example.com",
+      "id": 16
+    },
+    {
+      "fullName": "Laura Garcia",
+      "number": "1115559999",
+      "email": "laura.garcia@example.com",
+      "id": 17
+    },
+    {
+      "fullName": "Daniel Miller",
+      "number": "5554443333",
+      "email": "daniel.miller@example.com",
+      "id": 18
+    },
+    {
+      "fullName": "Michael Brown",
+      "number": "9998887777",
+      "email": "michael.brown@example.com",
+      "id": 19
+    }
+  ]
+}

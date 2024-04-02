@@ -1,0 +1,32 @@
+<form [formGroup]="customerForm" (ngSubmit)="onFormSubmit()">
+  <!-- Form for submitting customer data -->
+  <div mat-dialog-content class="content">
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Full Name</mat-label>
+        <input matInput type="text" placeholder="Ex. Sam Smith" formControlName="fullName">
+        <mat-error *ngIf="customerForm.get('fullName')?.invalid && customerForm?.get('fullName')?.touched">Invalid Full Name</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Phone Number</mat-label>
+        <input matInput type="text" placeholder="Ex. 0659875649" formControlName="number">
+        <mat-error *ngIf="customerForm?.get('number')?.invalid && customerForm?.get('number')?.touched">Invalid Phone Number</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" placeholder="Ex. test@gmail.com" formControlName="email">
+        <mat-error *ngIf="customerForm?.get('email')?.invalid && customerForm?.get('email')?.touched">Invalid Email</mat-error>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div mat-dialog-actions class="action">
+    <button mat-raised-button color="primary" type="submit">{{isEditing ? 'Update' : 'Submit'}}</button>
+  </div>  
+</form>

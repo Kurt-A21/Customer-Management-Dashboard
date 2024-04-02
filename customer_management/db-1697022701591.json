@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "customers": [
+    {
+      "fullName": "Kurt Adriaanse",
+      "number": "9217639",
+      "email": "test@gmail.com",
+      "id": 1
+    },
+    {
+      "fullName": "John Doe ",
+      "number": "10273891269",
+      "email": "test@gmail.com",
+      "id": 2
+    },
+    {
+      "fullName": "Sam Smith",
+      "number": "91263781268",
+      "email": "sam@gmail.com",
+      "id": 3
+    }
+  ]
+}

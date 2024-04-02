@@ -1,0 +1,62 @@
+<mat-form-field>
+  <mat-label>Search</mat-label>
+  <input
+    matInput
+    [formControl]="searchControl" 
+    (keyup)="applyFilter($event)"
+    placeholder="Ex. Kurt"
+    id="search"
+  />
+</mat-form-field>
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" matSort>
+    <!-- Id Column -->
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header id="header">Id</th>
+      <td mat-cell *matCellDef="let row">{{ row.id }}</td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header id="header">Name</th>
+      <td mat-cell *matCellDef="let customer">{{ customer.fullName }}</td>
+    </ng-container>
+
+    <!-- Phone number Column -->
+    <ng-container matColumnDef="number">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header id="header">Phone Number</th>
+      <td mat-cell *matCellDef="let customer">{{ customer.number }}</td>
+    </ng-container>
+
+    <!-- Email Column -->
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header id="header">Email</th>
+      <td mat-cell *matCellDef="let customer">{{ customer.email }}</td>
+    </ng-container>
+
+    <!-- Action Column -->
+    <ng-container matColumnDef="action">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header id="header">Action</th>
+      <td mat-cell *matCellDef="let customer">
+        <button mat-icon-button (click)="editCustomer(customer)" id="edit-customer">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deleteCustomer(customer.id)" id="delete-customer">
+          <mat-icon color="warn">delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 15, 20]"
+    showFirstLastButtons
+    aria-label="Select page of customer data"
+    id="paginator"
+  >
+  </mat-paginator>
+</div>
