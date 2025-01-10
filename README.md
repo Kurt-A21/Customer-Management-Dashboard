@@ -1,5 +1,3 @@
-# RaD-GP-C23-P-G3
-
 ## Customer Management App
 This is a simple Customer Management Application built using Angular. The app allows users to add and manage customer records, including their full name, phone number, and email address. It uses JSON-Server as a mock backend to store customer data.
 
